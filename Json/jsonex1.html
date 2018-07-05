@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Json
+        </title>
+    </head>
+    <body>
+        <script>
+            var obj1={user:"Mukul",age:22,comp:"CapG"};
+            var obj2={user:"Shivam",age:23,comp:"CapG"};
+            var obj3={user:"Teja",age:21,comp:"CapG"};
+            var obj4={u1:obj1,u2:obj2,u3:obj3};
+            document.write(obj1.user+" "+obj1.age+" "+obj1.comp);
+            obj1.comp="Capgemini";
+            document.write("<hr/>");
+            document.write(obj1.user+" "+obj1.age+" "+obj1.comp);
+            document.write("<hr/>");
+            document.write(obj4.u2.user);
+            document.write("<hr/>");
+            document.write(obj4["u2"]["user"]);
+            
+            </script>
+    </body>
+</html>
